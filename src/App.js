@@ -30,7 +30,7 @@ function App() {
         mobile: students.mobile,
         course: students.course,
       };
-      await axios.post("http://localhost:5000/api/register", payload);
+      await axios.post("https://hrms-backend-code-ntyy.onrender.com/api/register", payload);
       alert("Student Registered!");
       setStudents({
         name: "",
